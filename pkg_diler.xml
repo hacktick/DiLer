@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="package" version="3" method="upgrade">
+	<name>DiLer</name>
+	<packagename>diler</packagename>
+	<packager>DiLer - Digitale Lernumgebung</packager>
+	<creationDate>November 2012</creationDate>
+	<author>digitale-lernumgebung.de</author>
+	<authorEmail>diler@digitale-lernumgebung.de</authorEmail>
+	<authorUrl>https://digitale-lernumgebung.de</authorUrl>
+	<copyright>digitale-lernumgebung.de</copyright>
+	<license>AGPL v3 or later</license>
+	<version data-edition="CE">7.2.7</version>
+	<scriptfile>script.php</scriptfile>
+
+	<files folder="packages">
+		<file type="component" id="com_diler" >com_diler.zip</file>
+		<file type="component" id="com_dilerauth">com_dilerauth.zip</file>
+		<file type="component" id="com_dilerajax">com_dilerajax.zip</file>
+		<file type="component" id="com_dilerreg">com_dilerreg.zip</file>
+		<file type="module" id="mod_latestmessages" client="site">mod_latestmessages.zip</file>
+		<file type="plugin" id="plg_authentication_diler" group="authentication">plg_authentication_diler.zip</file>
+		<file type="plugin" id="plg_content_diler" group="content">plg_content_diler.zip</file>
+		<file type="plugin" id="plg_user_dilerreg" group="user">plg_user_dilerreg.zip</file>
+		<file type="plugin" id="plg_installer_dilerupdate" group="installer">plg_installer_dilerupdate.zip</file>
+		<file type="plugin" id="plg_system_dilerssl" group="system">plg_system_dilerssl.zip</file>
+		<file type="plugin" id="plg_system_dilermailer" group="system">plg_system_dilermailer.zip</file>
+		<file type="plugin" id="plg_system_dileroveridecurltransporter" group="system">plg_system_dileroveridecurltransporter.zip</file>
+		<file type="plugin" id="plg_system_dilerlinkmodifier" group="system">plg_system_dilerlinkmodifier.zip</file>
+		<file type="plugin" id="plg_system_exportcsv" group="system">plg_system_exportcsv.zip</file>
+		<file type="template" id="diler3" client="site">diler3.zip</file>
+	</files>
+
+	<updateservers>
+		<server type="extension" priority="1" name="DiLer">https://digitale-lernumgebung.de/updateserver/diler/diler-ce-update.xml</server>
+	</updateservers>
+	
+	<folder>language</folder>
+	<folder>authjoomlasso</folder>
+	<dependencies>
+		<dependency type="platform" name="joomla" operator=">" version="((4\.[01234]))" />
+	</dependencies>
+</extension>

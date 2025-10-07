@@ -1,0 +1,7 @@
+base   authjoomlasso
+author Stephan Thamm
+email  stephan@innovailable.eu
+date   2018-09-19
+name   authjoomla sso plugin
+desc   Authenticate against a Joomla Database (SSO only)
+url    https://www.dokuwiki.org/plugin:authjoomla
